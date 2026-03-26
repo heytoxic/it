@@ -1,0 +1,545 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <script src="/assets/js/ads.js"></script>
+
+
+    <!-- Primary SEO -->
+    <title>RBSE School Wise Result 2025 — 10th & 12th Marksheet | RankGuruJi.com</title>
+    <meta name="description" content="Check Rajasthan Board (RBSE) school-wise result 2025 for Class 10th and 12th. Enter any roll number to instantly view all students' marks, percentage, division and marksheet from your school. Free tool by RankGuruJi.com.">
+    <meta name="keywords" content="RBSE result 2025, Rajasthan Board result, school wise result, 10th result 2025, 12th result 2025, RBSE 10th result school wise, RBSE 12th result school wise, roll number result, marksheet download, board exam result Rajasthan, RankGuruJi">
+    <meta name="author" content="RankGuruJi.com">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://rankguruji.com/rbse-school-result">
+
+    <!-- Open Graph (Facebook / WhatsApp) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="RBSE School Wise Result 2025 — 10th & 12th | RankGuruJi.com">
+    <meta property="og:description" content="Enter any roll number to view all students' results from your school. Download marksheet, check percentage and division — Rajasthan Board 10th & 12th 2025.">
+    <meta property="og:url" content="https://rankguruji.com/rbse-school-result">
+    <meta property="og:image" content="https://rankguruji.com/assets/img/rbse.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="RankGuruJi.com">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="RBSE School Wise Result 2025 | RankGuruJi.com">
+    <meta name="twitter:description" content="Check Rajasthan Board school-wise result 2025. View marks, percentage and download marksheet for 10th & 12th students.">
+    <meta name="twitter:image" content="https://rankguruji.com/assets/img/rbse.png">
+
+    <!-- Structured Data: WebApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "RBSE School Wise Result",
+      "url": "https://rankguruji.com/rbse-school-result",
+      "description": "Check Rajasthan Board (RBSE) school-wise result 2025 for Class 10th and 12th by roll number.",
+      "applicationCategory": "EducationApplication",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript",
+      "inLanguage": "en-IN",
+      "publisher": {
+        "@type": "Organization",
+        "name": "RankGuruJi.com",
+        "url": "https://rankguruji.com",
+        "logo": "https://rankguruji.com/assets/img/rbse.png"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+      }
+    }
+    </script>
+
+    <!-- Structured Data: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://rankguruji.com" },
+        { "@type": "ListItem", "position": 2, "name": "RBSE Result", "item": "https://rankguruji.com/rbseresult" },
+        { "@type": "ListItem", "position": 3, "name": "School Wise Result", "item": "https://rankguruji.com/rbse-school-result" }
+      ]
+    }
+    </script>
+
+    <link rel="icon" href="https://rankguruji.com/assets/img/rbse.png" type="image/png">
+    <link rel="apple-touch-icon" href="https://rankguruji.com/assets/img/rbse.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Noto+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <style>
+        :root {
+            --saffron: #CC0000;
+            --saffron-light: #E53935;
+            --saffron-dark: #8B0000;
+            --navy: #0D1B3E;
+            --navy-mid: #162040;
+            --navy-light: #1E2D55;
+            --gold: #E8B84B;
+            --gold-light: #F5D07A;
+            --cream: #FDF6E9;
+            --off-white: #F8F5EF;
+            --text-dark: #1A1A2E;
+            --text-muted: #6E7A9A;
+            --border: #D8CEBF;
+            --success-green: #2E7D52;
+            --danger-red: #B71C1C;
+            --blue-accent: #1565C0;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; }
+
+        html, body { height: 100%; margin: 0; }
+
+        body {
+            font-family: 'Noto Sans', sans-serif;
+            background-color: var(--off-white);
+            background-image:
+                radial-gradient(circle at 20% 50%, rgba(255,107,26,0.04) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(13,27,62,0.04) 0%, transparent 50%);
+            color: var(--text-dark);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding-top: 64px;
+            transition: none;
+        }
+
+        /* ── NAVBAR ── */
+        .navbar {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%) !important;
+            border-bottom: 3px solid var(--saffron);
+            padding: 0 1rem 0 0.25rem;
+            height: 64px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+        }
+        .navbar-brand {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #fff !important;
+            letter-spacing: 0.5px;
+        }
+        .navbar-brand span { color: var(--saffron); }
+        @media (max-width: 576px) {
+            .navbar .container-fluid { position: relative; }
+            .navbar-brand {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+        .navbar-tagline {
+            font-size: 0.7rem;
+            color: var(--gold-light);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-left: 1rem;
+            padding-left: 1rem;
+            border-left: 1px solid rgba(255,255,255,0.2);
+            opacity: 0.8;
+        }
+        @media(max-width:576px){ .navbar-tagline { display: none; } }
+
+        /* ── HAMBURGER BUTTON ── */
+        .nav-hamburger {
+            background: none;
+            border: none;
+            color: #fff;
+            font-size: 1.3rem;
+            cursor: pointer;
+            padding: 4px 10px;
+            margin-right: 0.25rem;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.2s;
+        }
+        .nav-hamburger:hover { background: rgba(255,255,255,0.12); }
+
+        /* ── APP DRAWER ── */
+        .app-drawer-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.45);
+            z-index: 1200;
+            transition: opacity 0.3s;
+            opacity: 0;
+        }
+        .app-drawer-overlay.open { display: block; opacity: 1; }
+
+        .app-drawer {
+            position: fixed;
+            top: 0; left: 0;
+            height: 100vh;
+            width: 270px;
+            background: #fff;
+            z-index: 1210;
+            transform: translateX(-100%);
+            transition: transform 0.28s cubic-bezier(.4,0,.2,1);
+            display: flex;
+            flex-direction: column;
+            box-shadow: 4px 0 24px rgba(0,0,0,0.18);
+        }
+        .app-drawer.open { transform: translateX(0); }
+
+        .app-drawer-header {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+            border-bottom: 3px solid var(--saffron);
+            padding: 0 1rem 0 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            height: 64px;
+            min-height: 64px;
+            flex-shrink: 0;
+        }
+        .app-drawer-header .drawer-logo {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: #fff;
+            line-height: 1;
+        }
+        .app-drawer-header .drawer-logo span { color: var(--saffron); }
+        .app-drawer-header .drawer-subtitle {
+            font-size: 0.65rem;
+            color: var(--gold-light);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-top: 2px;
+        }
+        .app-drawer-close {
+            margin-left: auto;
+            background: rgba(255,255,255,0.12);
+            border: none;
+            color: #fff;
+            width: 32px; height: 32px;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            cursor: pointer;
+            font-size: 1rem;
+            flex-shrink: 0;
+            transition: background 0.2s;
+        }
+        .app-drawer-close:hover { background: rgba(255,255,255,0.25); }
+
+        .app-drawer-nav {
+            flex: 1;
+            overflow-y: auto;
+            padding: 0.5rem 0;
+        }
+        .drawer-section-label {
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            padding: 0.75rem 1.25rem 0.3rem;
+        }
+        .drawer-nav-item {
+            display: flex;
+            align-items: center;
+            gap: 0.9rem;
+            padding: 0.75rem 1.25rem;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-size: 0.92rem;
+            font-weight: 500;
+            border-radius: 0 24px 24px 0;
+            margin-right: 0.75rem;
+            transition: background 0.15s, color 0.15s;
+        }
+        .drawer-nav-item:hover, .drawer-nav-item.active {
+            background: rgba(204,0,0,0.08);
+            color: var(--saffron);
+        }
+        .drawer-nav-item i {
+            width: 22px;
+            text-align: center;
+            font-size: 1rem;
+            color: var(--saffron);
+            flex-shrink: 0;
+        }
+        .drawer-divider {
+            height: 1px;
+            background: var(--border);
+            margin: 0.5rem 1.25rem;
+        }
+
+        /* ── MAIN CONTAINER ── */
+        .main-wrapper {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 1.5rem 1rem 2rem;
+            flex: 1;
+            width: 100%;
+        }
+
+        /* ── SEARCH CARD ── */
+        .search-card {
+            background: #fff;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 24px rgba(13,27,62,0.08);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .search-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--saffron), var(--gold), var(--saffron));
+        }
+        .search-card-title {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin-bottom: 0.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+        .search-card-title .badge-rbse {
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 0.65rem;
+            font-weight: 600;
+            background: var(--saffron);
+            color: #fff;
+            padding: 3px 8px;
+            border-radius: 4px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            vertical-align: middle;
+        }
+        .search-card-subtitle {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--navy);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.4rem;
+        }
+        .form-select, .form-control {
+            border: 1.5px solid var(--border);
+            border-radius: 8px;
+            font-size: 0.9rem;
+            padding: 0.55rem 0.85rem;
+            background-color: var(--cream);
+            color: var(--text-dark);
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .form-select:focus, .form-control:focus {
+            border-color: var(--saffron);
+            box-shadow: 0 0 0 3px rgba(255,107,26,0.15);
+            background-color: #fff;
+            outline: none;
+        }
+
+        .btn-fetch {
+            background: linear-gradient(135deg, var(--saffron), var(--saffron-dark));
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 0.65rem 2rem;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            width: 100%;
+            transition: all 0.2s;
+            box-shadow: 0 3px 10px rgba(255,107,26,0.3);
+        }
+        .btn-fetch:hover:not(:disabled) {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 16px rgba(255,107,26,0.4);
+            background: linear-gradient(135deg, var(--saffron-light), var(--saffron));
+        }
+        .btn-fetch:disabled { opacity: 0.6; cursor: not-allowed; }
+        .btn-fetch-student {
+            background: linear-gradient(135deg, var(--navy), var(--navy-light)) !important;
+            box-shadow: 0 3px 10px rgba(13,27,62,0.3) !important;
+        }
+        .btn-fetch-student:hover:not(:disabled) {
+            background: linear-gradient(135deg, var(--navy-light), var(--navy)) !important;
+            box-shadow: 0 6px 16px rgba(13,27,62,0.4) !important;
+        }
+
+        /* ── PREVIOUS RESULTS ── */
+        #previousResultsSection {
+            background: #fff;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 12px rgba(13,27,62,0.06);
+        }
+        .prev-title {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--navy);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .prev-title i { color: var(--saffron); font-size: 0.85rem; }
+
+        /* ── LOADING ── */
+        .loading-spinner {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2.5rem;
+        }
+        .spinner-border { color: var(--saffron) !important; width: 2.5rem; height: 2.5rem; }
+        .loading-text { color: var(--text-muted); font-size: 0.9rem; margin-top: 0.75rem; }
+
+        /* ── RESULTS SECTION ── */
+        #resultsSection { margin-top: 0; }
+
+        .school-info-banner {
+            background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin-bottom: 1.25rem;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            text-align: center;
+            box-shadow: 0 4px 16px rgba(13,27,62,0.2);
+        }
+        .school-info-banner .school-name {
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #fff;
+            margin: 0;
+            line-height: 1.2;
+        }
+        .school-info-banner .class-year {
+            font-size: 0.85rem;
+            color: var(--gold-light);
+            margin-top: 0.2rem;
+        }
+        .school-info-banner .results-meta {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .meta-pill {
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.2);
+            border-radius: 20px;
+            padding: 3px 12px;
+            font-size: 0.78rem;
+            color: #fff;
+            backdrop-filter: blur(4px);
+        }
+        .meta-pill i { color: var(--gold); margin-right: 4px; }
+
+        /* ── ACTION TOOLBAR ── */
+        .action-toolbar {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+        .action-toolbar .btn-action {
+            border: 1.5px solid;
+            border-radius: 8px;
+            padding: 0.45rem 1rem;
+            font-size: 0.82rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: all 0.2s;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .btn-action-print  { border-color: var(--navy); color: var(--navy); background: #fff; }
+        .btn-action-print:hover { background: var(--navy); color: #fff; }
+        .btn-action-pdf    { border-color: var(--danger-red); color: var(--danger-red); background: #fff; }
+        .btn-action-pdf:hover { background: var(--danger-red); color: #fff; }
+        .btn-action-csv    { border-color: var(--success-green); color: var(--success-green); background: #fff; }
+        .btn-action-csv:hover { background: var(--success-green); color: #fff; }
+        .btn-action-excel  { border-color: #1D6F42; color: #1D6F42; background: #fff; }
+        .btn-action-excel:hover { background: #1D6F42; color: #fff; }
+        #resultsCount {
+            margin-left: auto;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+        #resultsCount strong { color: var(--navy); }
+
+        /* ── GROUP FILTER ── */
+        #groupFilterSection {
+            margin-bottom: 1rem;
+        }
+        #groupFilterSection .form-select {
+            max-width: 280px;
+        }
+
+        /* ── TABLE ── */
+        .table-card {
+            background: #fff;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(13,27,62,0.06);
+            margin-bottom: 1.25rem;
+        }
+        .student-table-container {
+            max-height: 520px;
+            overflow-x: auto;
+            overflow-y: auto;
+        }
+        .student-table {
+            width: 100%;
+            min-width: fit-content;
+            border-collapse: separate;
+            border-spacing: 0;
+            font-size: 0.79rem;
+        }
+        .student-table thead th {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: var(--navy);
